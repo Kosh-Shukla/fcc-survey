@@ -15,14 +15,14 @@
   <p id="description">Hi, Welcome to our platform. Please fill out this form so that we can tailor job opportunities
     to
     you</p>
-  <form id="survey-form">
+  <form id="survey-form" action="notepad.com" method="get">
     <fieldset>
-      <label for="name">Name<input id="name" name="name" required /></label>
-      <label for="cellno">Cell No.<input id="cellno" name="cellno" required /></label>
-      <label for="email">Email<input type="email" id="email" name="email" required /></label>
-      <label for="age">Age<span>(optional)</span><input type="number" id="age" name="age" /></label>
-      <label for="job=status">What's your job status?
-        <select id="job-status" required>
+      <label for="name"id="name-label">Name<input id="name" name="name" placeholder="FirstName MiddleName LastName" required /></label>
+      <label for="cellno" id="number-label">Cell No.<input type="number" id="number" name="cellno"  min="0001000000" max="9999999999" placeholder="0000000000" required /></label>
+      <label for="email"id="email-labelj">Email<input type="email" id="email" name="email"placeholder="email@domainmail.com" required /></label>
+      <label for="age">Age<span>(optional)</span><input type="number" id="age" name="age" min="18" max="99" /></label>
+      <label for="dropdown">What's your job status?
+        <select id="dropdown" required>
           <option value="Student">Student</option>
           <option value="Unefmployed">Unemployed</option>
           <option value="Under Contract">Under contract</option>
@@ -41,7 +41,7 @@
           <option value="Front-end-Developer">Front-end Developer</option>
           <option value="Back-end-Developer">Back-end Developer</option>
           <option value="Full-stack-Developer"> Full Stack Developer</option>
-        </select></label>    
+        </select></label>
     </fieldset>
     <fieldset>
       <p id="skills">What are your skils?</p>
