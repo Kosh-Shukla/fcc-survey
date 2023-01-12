@@ -35,7 +35,25 @@
       <label for="benefit"><input type="radio" id="benefit" name="benefit-status" />Yes</label>
       <label for="no-benefit"><input type="radio" id="no-benefit" name="benefit-status" />No</label>
     </fieldset>
+    <fieldset>
 
+      <label for="job-role">What's kind of job are you looking for?<select id="job-role" name="job-role">
+          <option value="Front-end-Developer">Front-end Developer</option>
+          <option value="Back-end-Developer">Back-end Developer</option>
+          <option value="Full-stack-Developer"> Full Stack Developer</option>
+        </select></label>    
+    </fieldset>
+    <fieldset>
+      <p id="skills">What are your skils?</p>
+      <label for="html"><input id="html" type="checkbox" value="html" name="skills" />HTML</label>
+      <label for="css"><input id="css" type="checkbox" value="css" name="skills" />CSS</label>
+      <label for="js"><input id="js" type="checkbox" value="js" name="skills" />JavaScript</label>
+    </fieldset>
+    <fieldset>
+      <label for="bio">Tell us somethings about yourself
+        <textarea id="bio" placeholder="I like nice cars.My strength is coding. "></textarea></label>
+    </fieldset>
+    <input type="submit" value="Submit">
   </form>
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer>
     setTimeout(() => {
