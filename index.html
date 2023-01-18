@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+  <title>
+    A Searchable title
+  </title>
+</head>
+
+<body>
+  <h1 id="title">Jobable Counsultancies</h1>
+  <p id="description">Hi, Welcome to our platform. Please fill out this form so that we can tailor job opportunities
+    to
+    you</p>
+  <form id="survey-form" action="notepad.com" method="get">
+    <fieldset>
+      <label for="name"id="name-label">Name<input id="name" name="name" placeholder="FirstName MiddleName LastName" required /></label>
+      <label for="cellno" id="number-label">Cell No.<input type="number" id="number" name="cellno"  min="0001000000" max="9999999999" placeholder="0000000000" required /></label>
+      <label for="email"id="email-label">Email<input type="email" id="email" name="email"placeholder="email@domainmail.com" required /></label>
+      <label for="age">Age<span>(optional)</span><input type="number" id="age" name="age" min="18" max="99" /></label>
+      <label for="dropdown">What's your job status?
+        <select id="dropdown" required>
+          <option value="no-choice"  >Select current job status</option>
+          <option value="Student">Student</option>
+          <option value="Unefmployed" default>Unemployed</option>
+          <option value="Under Contract">Under contract</option>
+          <option value="Freelancer">Freelancer</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <p>Are you claiming unemployment benefit(if unemployed)?</p>
+      <label for="benefit"><input type="radio" id="benefit" name="benefit-status" value="benefit" />Yes</label>
+      <label for="no-benefit"><input type="radio" id="no-benefit" name="benefit-status" value="no-benefit" />No</label>
+    </fieldset>
+    <fieldset>
+
+      <label for="job-role">What's kind of job are you looking for?<select id="job-role" name="job-role">
+          <option value="Front-end-Developer">Front-end Developer</option>
+          <option value="Back-end-Developer">Back-end Developer</option>
+          <option value="Full-stack-Developer"> Full Stack Developer</option>
+        </select></label>
+    </fieldset>
+    <fieldset>
+      <p id="skills">What are your skils?</p>
+      <label for="html"><input id="html" type="checkbox" value="html" name="skills" />HTML</label>
+      <label for="css"><input id="css" type="checkbox" value="css" name="skills" />CSS</label>
+      <label for="js"><input id="js" type="checkbox" value="js" name="skills" />JavaScript</label>
+    </fieldset>
+    <fieldset>
+      <label for="bio">Tell us somethings about yourself
+        <textarea id="bio" placeholder="I like nice cars.My strength is coding. "></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer>
+    setTimeout(() => {
+      document.location.reload();
+    }, 3000);
+  </script>
+</body>
+
+</html>
