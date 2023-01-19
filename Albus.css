@@ -1,4 +1,11 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
+html, body{background-color: #eeeeee;margin:0;padding:1em .5em ;}
+.center {text-align: center;}
+#main{margin:auto 1em;}
+#title{margin-top:}
+#img-div{background-color: white;margin:0;padding:0;}
+#image{max-width: 80%;}
+.bold{font-weight: bolder;}
+.italic{font-style: italic;}
+.right-align{text-align: right;}
+.justify{text-align: justify;}
+
