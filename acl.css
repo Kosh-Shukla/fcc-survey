@@ -1,0 +1,17 @@
+*{box-sizing: border-box;border-collapse: collapse;}
+html, body{background-color: #eeeeee;
+font-family: calibri, sans-serif;height: 95vh;padding:auto;}
+main{display: flex;height:95%;}
+main article, main nav{overflow:scroll;}
+nav{min-width: 20%;border-right: 5px double #111111; margin-right: 1em;}
+code{font-size:.65em;}
+/*section > header{display:inline-block;padding:1em 3em;border-radius:0 80%; border: .1em solid black; background-color: black; color:white;font-family: cursive;font-size: x-large;margin-top:1em;margin-bottom: 1em;}*/
+nav header{font-size: 1.2em;background-color: #111111;color: white;padding: 1em;}
+nav * {display:block;text-align: center; padding: .2em;border-bottom:1px solid black; text-decoration: none; color: black;}
+nav a:hover{background-color: black; color:white;font-size:larger;}
+
+@media(max-width:800px){
+	main{display:initial;}
+	nav{border-right:initial;
+		border-bottom:1px solid black;}
+}
