@@ -1,3 +1,3 @@
 # fcc-survey
-fcc survey first task
-from freecodecamp.org
+learning HTML CSS JAVASCRIPT
+fcc survey from freecodecamp.org
